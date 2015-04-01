@@ -16,9 +16,9 @@ assets/css/
 
 
 # Dependencies
- # Bower dependencies directory. comment this line to commit them.
+# Bower dependencies directory. comment this line to commit them.
 bower_modules/*
- # Node modules directory. comment this line to commit them.
+# Node modules directory. comment this line to commit them.
 node_modules/*
 logs
 *.log

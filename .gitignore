@@ -4,21 +4,21 @@
 
 
 # Comment these if we are building js/Sass on the server
-assets/dist/**.*
+assets/dist/**/*
+assets/temp/**/*
 **/*.map
 
 
 # CSS & Sass
 # css/*.css
-assets/css/
 .sass-cache/
 *.scssc
 
 
 # Dependencies
-# Bower dependencies directory. comment this line to commit them.
+ # Bower dependencies directory. comment this line to commit them.
 bower_modules/*
-# Node modules directory. comment this line to commit them.
+ # Node modules directory. comment this line to commit them.
 node_modules/*
 logs
 *.log
@@ -32,8 +32,6 @@ logs
 
 
 # Tooling
-# Photobox visual regression testing
-photobox/
 
 
 # Sublime Text project files

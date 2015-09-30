@@ -10,7 +10,6 @@ assets/temp/**/*
 
 
 # CSS & Sass
-# css/*.css
 .sass-cache/
 *.scssc
 

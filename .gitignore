@@ -19,12 +19,18 @@ assets/temp/**/*
 bower_modules/*
  # Node modules directory. comment this line to commit them.
 node_modules/*
-logs
-*.log
+# if we need node logs omitted, then the ignore line needs to be more specific so as to not block creation of logs directories by other tools & frameworks
+#logs
+#*.log
 
 
 # PHP
-.idea
+laravel/app/storage/sessions/*
+!laravel/app/storage/sessions/.gitkeep
+laravel/app/storage/cache/*
+!laravel/app/storage/cache/.gitkeep
+laravel/app/storage/logs/*
+!laravel/app/storage/logs/.gitkeep
 
 
 # .NET

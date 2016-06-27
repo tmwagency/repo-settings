@@ -1,2 +1,4 @@
-# Automatically normalize line endings for all text-based files
 * text=auto
+
+# Don't diff or textually merge source maps
+*.map   binary

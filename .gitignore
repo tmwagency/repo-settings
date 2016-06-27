@@ -13,6 +13,12 @@ assets/dist/**/*
 node_modules/*
 
 
+# PHP
+laravel/app/storage/sessions/*
+laravel/app/storage/cache/*
+laravel/app/storage/logs/*
+
+
 # OS or Editor folders
 ._*
 .cache
@@ -26,4 +32,3 @@ node_modules/*
 .vscode
 nbproject
 Thumbs.db
-logs

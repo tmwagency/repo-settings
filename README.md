@@ -13,6 +13,7 @@ Shared settings for all devs to use in each project
 
 We override the defaults by enforcing [dangly-commas](http://eslint.org/docs/rules/comma-dangle) and camelCase file names (js only)
 
+### Editor plugins
 * For Atom: [linter-xo](https://atom.io/packages/linter-xo)
 * For Sublime: [SublimeLinter-contrib-xo](https://packagecontrol.io/packages/SublimeLinter-contrib-xo)
 * For VS Code: [linter-xo](https://marketplace.visualstudio.com/items?itemName=samverschueren.linter-xo)

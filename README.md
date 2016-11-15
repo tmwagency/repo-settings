@@ -8,7 +8,7 @@ Shared settings for all devs to use in each project
 
 ---
 
-## Javascript linting
+## Use 'xo' for Javascript linting
 [xo JS linter](https://github.com/sindresorhus/xo/) ([default rules](https://github.com/sindresorhus/xo/#default-code-style))
 
 We override the defaults by enforcing [dangly-commas](http://eslint.org/docs/rules/comma-dangle) and camelCase file names (js only)
@@ -20,8 +20,8 @@ We override the defaults by enforcing [dangly-commas](http://eslint.org/docs/rul
 
 ---
 
-## CSS/Sass linting
-[Stylelint CSS linter](http://stylelint.io/). We use [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) as our default rules, see an example [here](https://github.com/stylelint/stylelint-config-standard#example)
+## Use 'stylelint' for Sass linting
+[stylelint CSS linter](http://stylelint.io/). We use [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) as our default rules, see an example [here](https://github.com/stylelint/stylelint-config-standard#example)
 
 ### Editor plugins
 * For Atom: [linter-stylelint](https://atom.io/packages/linter-stylelint)

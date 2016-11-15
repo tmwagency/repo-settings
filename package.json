@@ -1,0 +1,130 @@
+{
+  "name": "repo-settings",
+  "title": "Repo settings",
+  "version": "0.0.0",
+  "authors": [
+    {
+      "name": "Ciaran Park"
+    },
+    {
+      "name": "Dee Kennerley"
+    },
+    {
+      "name": "Denzil Brade"
+    },
+    {
+      "name": "JP Driver"
+    },
+    {
+      "name": "Zander Martineau"
+    }
+  ],
+  "scripts": {
+    "prestart": "npm prune && npm install",
+    "start": "gulp serve",
+    "compile": "gulp compile",
+    "predeploy": "npm prune && npm install --no-optional",
+    "deploy": "gulp compile --release",
+    "test": "npm run lint:js && npm run lint:css",
+    "lint:js": "xo",
+    "lint:css": "gulp test:css",
+    "fix:js": "xo --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:tmwagency/??.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "license": "unlicenced",
+  "engines": {
+    "node": ">=6.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "stylelint": "^7.1.0",
+    "stylelint-config-standard": "^14.0.0",
+    "xo": "^0.17.0"
+  },
+  "optionalDependencies": {},
+  "keywords": [],
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-object-assign"
+    ]
+  },
+  "xo": {
+    "esnext": true,
+    "global": [
+      "window"
+    ],
+    "ignores": [
+      "**/assets/src/js/standalone/**/*.js",
+      "**/assets/dist/**/*.js",
+      ".kickoff/**/*.js",
+      "gulpfile.js"
+    ],
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "xo/filename-case": [
+        "error",
+        {
+          "case": "camelCase"
+        }
+      ]
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": [
+        "tab",
+        {
+          "except": [
+            "value"
+          ]
+        }
+      ],
+      "at-rule-empty-line-before": [
+        "always",
+        {
+          "ignore": [
+            "blockless-after-same-name-blockless",
+            "blockless-group"
+          ]
+        }
+      ],
+      "declaration-empty-line-before": [
+        "never"
+      ],
+      "rule-non-nested-empty-line-before": [
+        "always-multi-line",
+        {
+          "except": [
+            "after-single-line-comment"
+          ],
+          "ignore": [
+            "after-comment"
+          ]
+        }
+      ],
+      "max-empty-lines": 2
+    }
+  }
+}

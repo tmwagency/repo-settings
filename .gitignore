@@ -12,12 +12,7 @@ assets/dist/**/*
 # - Node modules directory. comment this line to commit them.
 node_modules/*
 
-
-# PHP
-laravel/app/storage/sessions/*
-laravel/app/storage/cache/*
-laravel/app/storage/logs/*
-
+.eyeglass_cache
 
 # OS or Editor folders
 ._*
@@ -32,3 +27,5 @@ laravel/app/storage/logs/*
 .vscode
 nbproject
 Thumbs.db
+logs
+*.log

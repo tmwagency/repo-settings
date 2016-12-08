@@ -49,5 +49,35 @@ See our EditorConfig rules [here](https://github.com/tmwagency/repo-settings/blo
 
 ---
 
+## File Headers
+Customize, add, update and cooperate your authoring information in header comment
+
+#### Example:
+```
+/*
+* @Author: Zander Martineau
+* @Date:   2016-12-08 09:35:33
+* @Last Modified by:   Zander Martineau
+* @Last Modified time: 2016-12-08 15:40:17
+*/
+```
+
+### Editor plugins
+* For Atom: [file-header](https://atom.io/packages/file-header)
+* For Sublime: [FileHeader](https://packagecontrol.io/packages/FileHeader)
+* For VS Code: [vscode-fileheader](https://marketplace.visualstudio.com/items?itemName=mikey.vscode-fileheader)
+
+---
+
+## Kickoff Snippets :tada:
+Kickoff snippets for your editor!
+
+### Editor plugins
+* For Atom: [kickoff-snippets](https://atom.io/packages/kickoff-snippets)
+* For Sublime: [Kickoff Snippets](https://packagecontrol.io/packages/Kickoff%20Snippets)
+* For VS Code: [kickoff-snippets](https://marketplace.visualstudio.com/items?itemName=mrmartineau.kickoff-snippets)
+
+---
+
 ## NPM
 * [run scripts docs](https://docs.npmjs.com/misc/scripts)

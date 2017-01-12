@@ -20,11 +20,13 @@
     }
   ],
   "scripts": {
+    "preinstall": "nvm install 6.9.2 && nvm use 6.9.2 || echo nvm not found: ignoring",
     "prestart": "npm prune && npm install",
     "start": "gulp serve",
     "compile": "gulp compile",
     "predeploy": "npm prune && npm install --no-optional",
     "deploy": "gulp compile --release",
+    "postdeploy": "nvm install latest && nvm use latest || echo nvm not found: ignoring",
     "test": "npm run lint:js && npm run lint:css",
     "lint:js": "xo",
     "lint:css": "gulp test:css",

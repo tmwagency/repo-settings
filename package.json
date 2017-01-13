@@ -20,6 +20,7 @@
     }
   ],
   "scripts": {
+    "preinstall": "nvm install 6.9.2 && nvm use 6.9.2 || echo nvm not found: ignoring",
     "prestart": "npm prune && npm install",
     "start": "gulp serve",
     "compile": "gulp compile",
